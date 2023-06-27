@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class Main {
 
     public static void percorrerArvoreRecursivamente(ArvoreBinaria arvore, String tipoPercorrido) {
         System.out.print("Percorrendo " + tipoPercorrido + ": ");
-        if (tipoPercorrido.equals("EmOrdem")) {
+        if (Objects.equals(tipoPercorrido, "EmOrdem")) {
             arvore.percorrerEmOrdem();
         } else if (tipoPercorrido.equals("PreOrdem")) {
             arvore.percorrerPreOrdem();
